@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #222; /* Dark background for the game */
+}
+
+#pongCanvas {
+    background-color: #000; /* Black background for the canvas */
+    border: 2px solid #fff; /* White border around the canvas */
+}

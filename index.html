@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Central</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Game Central!</h1>
+        <p>Choose your game:</p>
+        <div class="button-container">
+            <button id="pongButton">Play Pong</button>
+            <button id="snakeButton">Play Snake</button>
+        </div>
+    </div>
+
+    <script>
+        // Get references to the buttons using their IDs
+        const pongButton = document.getElementById('pongButton');
+        const snakeButton = document.getElementById('snakeButton');
+
+        // Add an event listener to the Pong button
+        pongButton.addEventListener('click', () => {
+            // When the button is clicked, navigate to the pong.html page
+            window.location.href = 'pong.html';
+        });
+
+        // Add an event listener to the Snake button
+        snakeButton.addEventListener('click', () => {
+            // When the button is clicked, navigate to the snake.html page
+            window.location.href = 'snake.html';
+        });
+    </script>
+</body>
+</html>

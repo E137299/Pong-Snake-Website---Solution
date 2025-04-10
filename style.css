@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif; /* A common and readable sans-serif font */
+    display: flex; /* Use flexbox for easy centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    margin: 0; /* Remove default body margins */
+    background-color: #f4f4f4; /* A light gray background */
+}
+
+.container {
+    background-color: #fff; /* White background for the container */
+    padding: 30px; /* Add some padding around the content */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(1, 0, 0, 0.1); /* A subtle shadow for depth */
+    text-align: center; /* Center the text within the container */
+}
+
+h1 {
+    color: #333; /* Dark gray heading text */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+p {
+    color: #666; /* Gray paragraph text */
+    margin-bottom: 30px; /* Add space below the paragraph */
+}
+
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons horizontally */
+    gap: 20px; /* Add some space between the buttons */
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+button {
+    background-color: #007bff; /* Blue background for the buttons */
+    color: #fff; /* White text on the buttons */
+    border: none; /* Remove default button borders */
+    padding: 12px 24px; /* Add padding inside the buttons */
+    border-radius: 5px; /* Slightly rounded button corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    font-size: 16px; /* Set a readable font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
