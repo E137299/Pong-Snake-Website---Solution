@@ -14,6 +14,7 @@
         <div class="button-container">
             <button id="pongButton">Play Pong</button>
             <button id="snakeButton">Play Snake</button>
+            <button id="hangManButton">Play Hangman</button>
         </div>
     </div>
 
@@ -32,6 +33,12 @@
         snakeButton.addEventListener('click', () => {
             // When the button is clicked, navigate to the snake.html page
             window.location.href = 'snake.html';
+        });
+
+        // Add an event listener to the Hangman button
+        hangManButton.addEventListener('click', () => {
+            // When the button is clicked, navigate to the snake.html page
+            window.location.href = 'hangMan.html';
         });
     </script>
 </body>
