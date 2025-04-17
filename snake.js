@@ -91,6 +91,11 @@ class Head {
                 break;
         }
 
+        if(this.x < 0 || this.x > canvasWidth || this.y < 0 || this.y > canvasHeight){
+            for(let i = 0; i < snake.length; i++){
+                snake.splice(i);
+            }
+        }
         // Keep snake within bounds
         this.x = Math.max(0, Math.min(this.x, canvasWidth - this.width));
         this.y = Math.max(0, Math.min(this.y, canvasHeight - this.height));
@@ -121,11 +126,7 @@ class Segment {
     }
 }
 
-const apple = new Apple();
-const snake = [new Head("ArrowUp", "ArrowRight", "ArrowDown", "ArrowLeft")]; // Snake is an array, starts with the head.
 
-let gameSpeed = 200;
-let lastTime = 0;
 
 // --- Event Listeners for Keyboard Input ---
 document.addEventListener('keydown', (event) => {
@@ -200,5 +201,10 @@ function gameLoop(currentTime) {
     requestAnimationFrame(gameLoop);
 }
 
+const apple = new Apple();
+const snake = [new Head("ArrowUp", "ArrowRight", "ArrowDown", "ArrowLeft")]; // Snake is an array, starts with the head.
+
+let gameSpeed = 200;
+let lastTime = 0;
 drawBoard(); //draw once
 gameLoop(0); // Start the loop, pass in currentTime
